@@ -14,6 +14,12 @@ To values $n=10$ and $n=50$, where $a=1$ m, $b=2$ m, $V_{0}=10$ V and $V_{1} = V
 
 ## Task 3
 
+### Problem 01
+
+### Problem 02
+
+### Problem 03
+
 ## Lecture about Transmission Line
 
 ## Task 4
