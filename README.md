@@ -115,7 +115,7 @@ This notebook performs an analytical study of wave reflection and transmission i
 > **Computer Experiment:**  
 > Reproduce all results and plots from **Examples 9.11.1 and 9.11.2**, including:
 - Dispersion curves (frequency vs propagation constant $\beta$).
-- Normalized parameter plots ($v(u)$).
+- Normalized parameter plots $v(u)$.
 - Electric field profiles $E_y(x)$ for supported TE and TM modes.
 
 ---
@@ -149,10 +149,10 @@ $$
 $$
 
 Where:
-- \(R\) = resistance (Ω/m)
-- \(L\) = inductance (H/m)
-- \(G\) = conductance (S/m)
-- \(C\) = capacitance (F/m)
+- $R$ = resistance ($\Omega/m$)
+- $L$ = inductance ($H/m$)
+- $G$ = conductance ($S/m$)
+- $C$ = capacitance ($F/m$)
 
 ---
 
@@ -171,8 +171,8 @@ $$
 $$
 
 where:
-- \(\alpha\) = attenuation constant (Np/m)  
-- \(\beta\) = phase constant (rad/m)  
+- $\alpha$ = attenuation constant (Np/m)  
+- $\beta$ = phase constant (rad/m)  
 
 ---
 
