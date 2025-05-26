@@ -1,27 +1,27 @@
 # 🎓 Master Course: Applied Electromagnetics
 
-This repository contains analytical formulations, simulations, and computational experiments developed for the **Applied Electromagnetics course of the Master's program**.  
+This repository contains analytical formulations, simulations, and computational experiments developed for the **Applied Electromagnetics course of the Master's program**.
 
 The work spans boundary value problems, wave reflection in dielectric interfaces, waveguide propagation, and transmission line analysis — integrating both analytical methods and computational approaches.
 
 > 👨‍🏫 **Professor**: [Prof. Dr. João Batista Rosa Silva]( http://lattes.cnpq.br/7148636278106663)
 
 ---
+
 ## 🧠 Dependencies & Libraries
 
 The following Python libraries were used across the notebooks in this repository:
 
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org/) [![SymPy](https://img.shields.io/badge/SymPy-3B5526?style=flat-square&logo=sympy&logoColor=white)](https://www.sympy.org/) [![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)](https://plotly.com/) [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white)](https://matplotlib.org/) [![Math](https://img.shields.io/badge/Math-built--in-11557C?style=flat-square&logo=python&logoColor=white)](https://docs.python.org/3/library/math.html)  
+[![NumPy](https://img.shields.io/badge/NumPy-1.26.4-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org/) [![SymPy](https://img.shields.io/badge/SymPy-1.12-3B5526?style=flat-square&logo=sympy&logoColor=white)](https://www.sympy.org/) [![Plotly](https://img.shields.io/badge/Plotly-5.20.0-3F4F75?style=flat-square&logo=plotly&logoColor=white)](https://plotly.com/) [![Matplotlib](https://img.shields.io/badge/Matplotlib-3.8.4-11557C?style=flat-square&logo=matplotlib&logoColor=white)](https://matplotlib.org/) [![Math](https://img.shields.io/badge/Math-built--in-11557C?style=flat-square&logo=python&logoColor=white)](https://docs.python.org/3/library/math.html)
 
 ### ✅ Main Usage per Notebook:
 
-| Notebook                               | Libraries                                                          |
-| --------------------------------------- | ------------------------------------------------------------------- |
-| `notebooks/electrostatic_potential.ipynb`        | NumPy, SymPy, Plotly                                               |
-| `notebooks/dielectric_reflection.ipynb`          | NumPy, Plotly, Math                                                |
-| `notebooks/waveguide_simulation.ipynb`           | NumPy, Matplotlib, Math                                            |
-| `notebooks/transmission_line_analysis.ipynb`     | NumPy, Plotly                                                      |
-
+| Notebook                                   | Libraries                                                          |
+| ------------------------------------------- | ------------------------------------------------------------------- |
+| `notebooks/electrostatic_potential.ipynb`  | NumPy 1.26.4, SymPy 1.12, Plotly 5.20.0                            |
+| `notebooks/dielectric_reflection.ipynb`    | NumPy 1.26.4, Plotly 5.20.0, Math                                   |
+| `notebooks/waveguide_simulation.ipynb`     | NumPy 1.26.4, Matplotlib 3.8.4, Math                                |
+| `notebooks/transmission_line_analysis.ipynb`| NumPy 1.26.4, Plotly 5.20.0                                         |
 
 ---
 
@@ -59,6 +59,16 @@ This notebook develops the analytical solution for the electrostatic potential i
 
 ## ⚙️ Wave Reflection on Dielectric Structures
 
+### 📐 Reflection and Transmission Model
+
+<p align="center">
+  <img src="images/single_interface_reflection.png" width="500"/>
+</p>
+
+This figure illustrates the boundary conditions of an electromagnetic wave encountering a dielectric interface. The incident, reflected, and transmitted fields are represented along with their respective directions and media properties.
+
+---
+
 ### Problem 01 — Single Dielectric Slab (Air–Dielectric–Air)
 
 A uniform plane wave at 10 GHz is incident normally on a dielectric plate with $\epsilon_r = 3.7$, bounded by air on both sides.
@@ -70,6 +80,10 @@ A uniform plane wave at 10 GHz is incident normally on a dielectric plate with $
 
 ### Problem 02 — Dielectric Slab with Semi-Infinite Medium
 
+<p align="center">
+  <img src="images/three_layer_reflection.png" width="600"/>
+</p>
+
 A plane wave is incident normally on a dielectric slab of thickness $\lambda_{2_{0}}/4$ (at 10 GHz), bounded by air on one side and a semi-infinite medium with $\epsilon_{r_3} = 5.7$ on the other.
 
 > **(a)** Compute the intrinsic impedance $\eta_2$ and dielectric constant $\epsilon_2$ to achieve zero reflection at both 10 GHz and 20 GHz.  
@@ -79,6 +93,10 @@ A plane wave is incident normally on a dielectric slab of thickness $\lambda_{2_
 ---
 
 ### Problem 03 — Binomial Matching with Two Dielectric Slabs
+
+<p align="center">
+  <img src="images/multilayer_matching_network.png" width="700"/>
+</p>
 
 Two lossless dielectric plates, each with thickness $\lambda_0/4$ at $f_0 = 10$ GHz, are placed between air and a semi-infinite medium with $\epsilon_L = 6.7$. A binomial impedance-matching design is applied with a fractional bandwidth of 0.375.
 
@@ -131,6 +149,16 @@ This notebook analyzes:
 ---
 
 ## ⚙️ Transmission Line Analysis
+
+### 📐 Microstrip Transmission Line Model
+
+<p align="center">
+  <img src="images/microstrip_transmission_line.png" width="500"/>
+</p>
+
+This figure depicts the electric (E) and magnetic (H) field distributions in a microstrip transmission line, which is a common planar transmission line used in high-frequency circuits. The fringing effect of the fields in the air above the substrate is clearly visible.
+
+---
 
 ### 📓 Description of the notebook [`transmission_line_analysis.ipynb`](notebooks/transmission_line_analysis.ipynb)
 
@@ -218,5 +246,3 @@ $$
 - **Matthew N. O. Sadiku**, _Computational Electromagnetics with MATLAB_, 4th Edition, CRC Press, 2019.  
 - **Sophocles J. Orfanidis**, _Electromagnetic Waves and Antennas_, Rutgers University, 2016.  
   🔍 Focus on **Chapter 9 — Waveguides**, especially Sections **9.8 and 9.11**, Examples **9.11.1, 9.11.2**, and Problems **9.10 and 9.11**.
-
----
