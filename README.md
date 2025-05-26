@@ -11,17 +11,16 @@ The work spans boundary value problems, wave reflection in dielectric interfaces
 
 The following Python libraries were used across the notebooks in this repository:
 
-[![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org/) [![SymPy](https://img.shields.io/badge/SymPy-3B5526?style=flat-square&logo=sympy&logoColor=white)](https://www.sympy.org/) [![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)](https://plotly.com/) [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white)](https://matplotlib.org/) [![Math](https://img.shields.io/badge/Math-built--in-11557C?style=flat-square&logo=python&logoColor=white)](https://docs.python.org/3/library/math.html)  
+[![NumPy](https://img.shields.io/badge/NumPy-1.26.4-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org/) [![SymPy](https://img.shields.io/badge/SymPy-1.12-3B5526?style=flat-square&logo=sympy&logoColor=white)](https://www.sympy.org/) [![Plotly](https://img.shields.io/badge/Plotly-5.20.0-3F4F75?style=flat-square&logo=plotly&logoColor=white)](https://plotly.com/) [![Matplotlib](https://img.shields.io/badge/Matplotlib-3.8.4-11557C?style=flat-square&logo=matplotlib&logoColor=white)](https://matplotlib.org/) [![Math](https://img.shields.io/badge/Math-built--in-11557C?style=flat-square&logo=python&logoColor=white)](https://docs.python.org/3/library/math.html)
 
 ### ✅ Main Usage per Notebook:
 
-| Notebook                               | Libraries                                                          |
-| --------------------------------------- | ------------------------------------------------------------------- |
-| `notebooks/electrostatic_potential.ipynb`        | NumPy, SymPy, Plotly                                               |
-| `notebooks/dielectric_reflection.ipynb`          | NumPy, Plotly, Math                                                |
-| `notebooks/waveguide_simulation.ipynb`           | NumPy, Matplotlib, Math                                            |
-| `notebooks/transmission_line_analysis.ipynb`     | NumPy, Plotly                                                      |
-
+| Notebook                                   | Libraries                                                          |
+| ------------------------------------------- | ------------------------------------------------------------------- |
+| `notebooks/electrostatic_potential.ipynb`  | NumPy 1.26.4, SymPy 1.12, Plotly 5.20.0                            |
+| `notebooks/dielectric_reflection.ipynb`    | NumPy 1.26.4, Plotly 5.20.0, Math                                   |
+| `notebooks/waveguide_simulation.ipynb`     | NumPy 1.26.4, Matplotlib 3.8.4, Math                                |
+| `notebooks/transmission_line_analysis.ipynb`| NumPy 1.26.4, Plotly 5.20.0                                         |
 
 ---
 
