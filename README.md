@@ -171,14 +171,14 @@ $$
 $$
 
 where:
-- $\alpha$ = attenuation constant (Np/m)  
-- $\beta$ = phase constant (rad/m)  
+- $\alpha$ = attenuation constant ($Np/m$)  
+- $\beta$ = phase constant ($rad/m$)  
 
 ---
 
 ### 🔸 Input Impedance:
 
-For a line of length \(l\) terminated with a load \(Z_L\):
+For a line of length $l$ terminated with a load $Z_L$:
 
 $$
 Z_{in} = Z_0 \frac{Z_L + j Z_0 \tan(\beta l)}{Z_0 + j Z_L \tan(\beta l)}
