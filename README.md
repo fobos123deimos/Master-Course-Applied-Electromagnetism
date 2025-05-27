@@ -57,7 +57,7 @@ This notebook develops the analytical solution for the electrostatic potential i
 ### 📐 Reflection and Transmission Model
 
 <p align="center">
-  <img src="images/single_interface_reflection.png" width="500"/>
+  <img src="images/single_interface_reflection.PNG" width="500"/>
 </p>
 
 This figure illustrates the boundary conditions of an electromagnetic wave encountering a dielectric interface. The incident, reflected, and transmitted fields are represented along with their respective directions and media properties.
@@ -81,7 +81,7 @@ A uniform plane wave at 10 GHz is incident normally on a dielectric plate with $
 ### Problem 02 — Dielectric Slab with Semi-Infinite Medium
 
 <p align="center">
-  <img src="images/three_layer_reflection.png" width="600"/>
+  <img src="images/three_layer_reflection.PNG" width="600"/>
 </p>
 
 A plane wave is incident normally on a dielectric slab of thickness $\lambda_{2_{0}}/4$ (at 10 GHz), bounded by air on one side and a semi-infinite medium with $\epsilon_{r_3} = 5.7$ on the other.
@@ -95,7 +95,7 @@ A plane wave is incident normally on a dielectric slab of thickness $\lambda_{2_
 ### Problem 03 — Binomial Matching with Two Dielectric Slabs
 
 <p align="center">
-  <img src="images/multilayer_matching_network.png" width="700"/>
+  <img src="images/multilayer_matching_network.PNG" width="700"/>
 </p>
 
 Two lossless dielectric plates, each with thickness $\lambda_0/4$ at $f_0 = 10$ GHz, are placed between air and a semi-infinite medium with $\epsilon_L = 6.7$. A binomial impedance-matching design is applied with a fractional bandwidth of 0.375.
