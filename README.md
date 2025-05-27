@@ -27,17 +27,12 @@ The following Python libraries were used across the notebooks in this repository
 
 ## ⚙️ Electrostatic Potential and Electric Field Visualization
 
-Given the boundary conditions illustrated below:
-
 ![](images/potential_boundary.png)
 
-- $V = V_{0} = 10$ V at $y = 0$
-- $V = V_{1} = V_{0} \sin\left( \frac{\pi x}{a} \right) = 10 \sin(\pi x)$ V at $y = b$
-- $V = 0$ at $x = 0$ and $x = a$
+### 📌 Applications
+Understanding electrostatic potential distributions is essential in designing capacitive sensors, MEMS devices, insulation systems, and electrostatic actuators used in various industries.
 
-With parameters:  
-- $a = 1$ m  
-- $b = 2$ m  
+---
 
 ### Objective
 
@@ -62,10 +57,15 @@ This notebook develops the analytical solution for the electrostatic potential i
 ### 📐 Reflection and Transmission Model
 
 <p align="center">
-  <img src="images/single_interface_reflection.PNG" width="500"/>
+  <img src="images/single_interface_reflection.png" width="500"/>
 </p>
 
 This figure illustrates the boundary conditions of an electromagnetic wave encountering a dielectric interface. The incident, reflected, and transmitted fields are represented along with their respective directions and media properties.
+
+---
+
+### 📌 Applications
+This analysis is fundamental in designing **anti-reflection coatings**, **radar absorbing materials**, **stealth technology**, and **wireless communication systems**, where signal reflection needs to be controlled.
 
 ---
 
@@ -81,7 +81,7 @@ A uniform plane wave at 10 GHz is incident normally on a dielectric plate with $
 ### Problem 02 — Dielectric Slab with Semi-Infinite Medium
 
 <p align="center">
-  <img src="images/three_layer_reflection.PNG" width="600"/>
+  <img src="images/three_layer_reflection.png" width="600"/>
 </p>
 
 A plane wave is incident normally on a dielectric slab of thickness $\lambda_{2_{0}}/4$ (at 10 GHz), bounded by air on one side and a semi-infinite medium with $\epsilon_{r_3} = 5.7$ on the other.
@@ -95,7 +95,7 @@ A plane wave is incident normally on a dielectric slab of thickness $\lambda_{2_
 ### Problem 03 — Binomial Matching with Two Dielectric Slabs
 
 <p align="center">
-  <img src="images/multilayer_matching_network.PNG" width="700"/>
+  <img src="images/multilayer_matching_network.png" width="700"/>
 </p>
 
 Two lossless dielectric plates, each with thickness $\lambda_0/4$ at $f_0 = 10$ GHz, are placed between air and a semi-infinite medium with $\epsilon_L = 6.7$. A binomial impedance-matching design is applied with a fractional bandwidth of 0.375.
@@ -117,6 +117,11 @@ This notebook performs an analytical study of wave reflection and transmission i
 ---
 
 ## ⚙️ Waveguide Propagation and Simulation
+
+### 📌 Applications
+Waveguides are the backbone of high-frequency signal transmission in **radars**, **satellite communication**, **microwave circuits**, and **optical fiber technologies**. Understanding dispersion and attenuation is critical in designing low-loss, high-performance transmission systems.
+
+---
 
 ### Problem 9.10 — WR-159 Rectangular Waveguide
 
@@ -157,6 +162,11 @@ This notebook analyzes:
 </p>
 
 This figure depicts the electric (E) and magnetic (H) field distributions in a microstrip transmission line, which is a common planar transmission line used in high-frequency circuits. The fringing effect of the fields in the air above the substrate is clearly visible.
+
+---
+
+### 📌 Applications
+Transmission lines are ubiquitous in **RF circuits**, **antennas**, **microwave circuits**, and **printed circuit boards (PCBs)**. Understanding impedance matching, reflection, and signal integrity is essential for reliable and efficient communication and sensing systems.
 
 ---
 
