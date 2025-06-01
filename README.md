@@ -5,7 +5,9 @@ This repository contains analytical formulations, simulations, and computational
 The work spans boundary value problems, wave reflection in dielectric interfaces, waveguide propagation, and transmission line analysis — integrating both analytical methods and computational approaches.
 
 > 👨‍🏫 **Professor**: [Prof. Dr. João Batista Rosa Silva]( http://lattes.cnpq.br/7148636278106663)
-
+> 
+> 🚀 **Note**: All notebooks in this repository are fully compatible with [Google Colab](https://colab.research.google.com/).  
+> Simply open any `.ipynb` file via Colab to run the simulations and visualizations in the cloud without local setup.
 ---
 
 ## 🧠 Dependencies & Libraries
