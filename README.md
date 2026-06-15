@@ -15,32 +15,37 @@ This repository contains analytical formulations, simulations, and computational
 
 The work covers **boundary value problems**, **electrostatic potential visualization**, **wave reflection in dielectric interfaces**, **waveguide propagation**, and **transmission line analysis**, combining classical electromagnetic theory with computational notebooks.
 
-> 👨‍🏫 **Professor**: [Prof. Dr. João Batista Rosa Silva](http://lattes.cnpq.br/7148636278106663)  
+> 👨‍🏫 **Professor**: [Prof. Dr. João Batista Rosa Silva](http://lattes.cnpq.br/7148636278106663)
 > 🚀 **Google Colab**: All notebooks in this repository are compatible with [Google Colab](https://colab.research.google.com/). Open any `.ipynb` file in Colab to run simulations and visualizations in the cloud without local setup.
 
 ---
 
-## 📌 Overview
+# 🧭 Table of Contents
 
-This repository is an educational and computational study space for applied electromagnetics.
-
-The main goal is to connect:
-
-```text
-analytical electromagnetic theory
-boundary value problems
-numerical visualization
-frequency-domain simulation
-wave propagation
-impedance matching
-transmission line modeling
-```
-
-The notebooks are designed to support both theoretical understanding and computational exploration. Each notebook starts from a physical problem, develops the mathematical model, computes relevant quantities, and visualizes the electromagnetic behavior.
+* [Conceptual Map](#-conceptual-map)
+* [Main Usage per Notebook](#-main-usage-per-notebook)
+* [Repository Structure](#-repository-structure)
+* [Dependencies & Libraries](#-dependencies--libraries)
+* [Running the Notebooks](#️-running-the-notebooks)
+* [Computational Concepts](#-computational-concepts)
+* [Electromagnetic Theory Background](#-electromagnetic-theory-background)
+* [Electrostatic Potential and Electric Field Visualization](#️-electrostatic-potential-and-electric-field-visualization)
+* [Wave Reflection on Dielectric Structures](#-wave-reflection-on-dielectric-structures)
+* [Waveguide Propagation and Simulation](#-waveguide-propagation-and-simulation)
+* [Transmission Line Analysis](#-transmission-line-analysis)
+* [Computational Complexity Notes](#-computational-complexity-notes)
+* [Behavior Summary](#-behavior-summary)
+* [Suggested Study Path](#-suggested-study-path)
+* [Technologies and Tools](#-technologies-and-tools)
+* [Future Improvements](#-future-improvements)
+* [Notes](#️-notes)
+* [Image Credits and Sources](#️-image-credits-and-sources)
+* [References and Further Reading](#-references-and-further-reading)
+* [License](#-license)
 
 ---
 
-## 🧭 Conceptual Map
+# 🧭 Conceptual Map
 
 ```mermaid
 graph TD
@@ -78,18 +83,18 @@ graph TD
 
 ---
 
-## ✅ Main Usage per Notebook
+# ✅ Main Usage per Notebook
 
-| Notebook | Main Topic | Main Libraries | Description |
-|---|---|---|---|
-| `notebooks/electrostatic_potential.ipynb` | Electrostatic potential and electric field | NumPy, SymPy, Plotly | Solves a rectangular boundary value problem using separation of variables and visualizes $V(x,y)$ and $|E(x,y)|$. |
-| `notebooks/dielectric_reflection.ipynb` | Dielectric reflection and matching layers | NumPy, Plotly, Math | Studies single-layer and multilayer dielectric matching structures over frequency. |
-| `notebooks/waveguide_simulation.ipynb` | Rectangular and dielectric slab waveguides | NumPy, Matplotlib, Math | Computes waveguide propagation, attenuation, dispersion curves, and modal field profiles. |
-| `notebooks/transmission_line_analysis.ipynb` | Transmission line theory and impedance matching | NumPy, Plotly | Computes characteristic impedance, propagation constant, input impedance, reflection coefficient, SWR, and related visualizations. |
+| Notebook                                     | Main Topic                                      | Main Libraries          | Description                                                                                                                        |        |    |
+| -------------------------------------------- | ----------------------------------------------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------ | -- |
+| `notebooks/electrostatic_potential.ipynb`    | Electrostatic potential and electric field      | NumPy, SymPy, Plotly    | Solves a rectangular boundary value problem using separation of variables and visualizes $V(x,y)$ and $                            | E(x,y) | $. |
+| `notebooks/dielectric_reflection.ipynb`      | Dielectric reflection and matching layers       | NumPy, Plotly, Math     | Studies single-layer and multilayer dielectric matching structures over frequency.                                                 |        |    |
+| `notebooks/waveguide_simulation.ipynb`       | Rectangular and dielectric slab waveguides      | NumPy, Matplotlib, Math | Computes waveguide propagation, attenuation, dispersion curves, and modal field profiles.                                          |        |    |
+| `notebooks/transmission_line_analysis.ipynb` | Transmission line theory and impedance matching | NumPy, Plotly           | Computes characteristic impedance, propagation constant, input impedance, reflection coefficient, SWR, and related visualizations. |        |    |
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
 ```text
 applied_electromagnetics/
@@ -112,25 +117,25 @@ applied_electromagnetics/
 
 ---
 
-## 🧠 Dependencies & Libraries
+# 🧠 Dependencies & Libraries
 
 The notebooks use standard scientific Python libraries.
 
-| Library / Tool | Purpose |
-|---|---|
-| Python 3.x | Main programming language for the notebooks. |
-| Google Colab | Cloud execution environment for notebooks. |
-| NumPy 1.26.4 | Numerical arrays, vectorized computations, frequency sweeps, and field calculations. |
-| SymPy 1.12 | Symbolic manipulation and analytical derivations. |
-| Plotly 5.20.0 | Interactive plots, surfaces, and frequency-domain visualizations. |
-| Matplotlib 3.8.4 | Static scientific plots and waveguide field profiles. |
-| Python `math` | Basic mathematical functions and constants. |
+| Library / Tool   | Purpose                                                                              |
+| ---------------- | ------------------------------------------------------------------------------------ |
+| Python 3.x       | Main programming language for the notebooks.                                         |
+| Google Colab     | Cloud execution environment for notebooks.                                           |
+| NumPy 1.26.4     | Numerical arrays, vectorized computations, frequency sweeps, and field calculations. |
+| SymPy 1.12       | Symbolic manipulation and analytical derivations.                                    |
+| Plotly 5.20.0    | Interactive plots, surfaces, and frequency-domain visualizations.                    |
+| Matplotlib 3.8.4 | Static scientific plots and waveguide field profiles.                                |
+| Python `math`    | Basic mathematical functions and constants.                                          |
 
 ---
 
-## ▶️ Running the Notebooks
+# ▶️ Running the Notebooks
 
-### Option 1 — Google Colab
+## Option 1 — Google Colab
 
 1. Open [Google Colab](https://colab.research.google.com/).
 2. Choose **File > Open notebook**.
@@ -143,7 +148,7 @@ This is the recommended option if you do not want to install dependencies locall
 
 ---
 
-### Option 2 — Local Jupyter Environment
+## Option 2 — Local Jupyter Environment
 
 Install the required libraries:
 
@@ -161,7 +166,7 @@ Then open the desired notebook from the `notebooks/` folder.
 
 ---
 
-## 📘 Computational Concepts
+# 📘 Computational Concepts
 
 This project demonstrates several computational and electromagnetic concepts:
 
@@ -212,12 +217,12 @@ $$
 
 where:
 
-- $\mathbf{E}$ is the electric field intensity
-- $\mathbf{H}$ is the magnetic field intensity
-- $\mathbf{D}$ is the electric flux density
-- $\mathbf{B}$ is the magnetic flux density
-- $\rho_v$ is the volume charge density
-- $\mathbf{J}$ is the current density
+* $\mathbf{E}$ is the electric field intensity
+* $\mathbf{H}$ is the magnetic field intensity
+* $\mathbf{D}$ is the electric flux density
+* $\mathbf{B}$ is the magnetic flux density
+* $\rho_v$ is the volume charge density
+* $\mathbf{J}$ is the current density
 
 ---
 
@@ -239,9 +244,9 @@ $$
 
 where:
 
-- $\epsilon$ is the permittivity
-- $\mu$ is the permeability
-- $\sigma$ is the conductivity
+* $\epsilon$ is the permittivity
+* $\mu$ is the permeability
+* $\sigma$ is the conductivity
 
 These relations connect electromagnetic fields to material properties.
 
@@ -353,12 +358,12 @@ flowchart LR
 
 It includes:
 
-- symbolic derivation of the potential function $V(x,y)$;
-- numerical evaluation of the truncated series;
-- visualization of $V(x,y)$;
-- computation of the electric field components;
-- plotting of the electric field magnitude $|E(x,y)|$;
-- comparison between different numbers of series terms.
+* symbolic derivation of the potential function $V(x,y)$;
+* numerical evaluation of the truncated series;
+* visualization of $V(x,y)$;
+* computation of the electric field components;
+* plotting of the electric field magnitude $|E(x,y)|$;
+* comparison between different numbers of series terms.
 
 ---
 
@@ -394,7 +399,7 @@ $$
 \eta = \frac{\eta_0}{\sqrt{\epsilon_r}}
 $$
 
-where $\eta_0 \approx 377\,\Omega$ is the intrinsic impedance of free space.
+where $\eta_0 \approx 377,\Omega$ is the intrinsic impedance of free space.
 
 ---
 
@@ -511,7 +516,7 @@ $$
 Each plate has quarter-wave electrical thickness at:
 
 $$
-f_0 = 10\,\text{GHz}
+f_0 = 10,\text{GHz}
 $$
 
 A binomial impedance-matching design is applied with fractional bandwidth:
@@ -553,12 +558,12 @@ flowchart LR
 
 It includes:
 
-- design of matching layers for zero reflection at specific frequencies;
-- computation of intrinsic impedances and dielectric constants;
-- reflection coefficient analysis over frequency ranges;
-- comparison between single-section and binomial multi-section matching techniques;
-- ray-tracing interpretation of multiple reflected waves;
-- interactive visualizations of $|\Gamma(f)|$.
+* design of matching layers for zero reflection at specific frequencies;
+* computation of intrinsic impedances and dielectric constants;
+* reflection coefficient analysis over frequency ranges;
+* comparison between single-section and binomial multi-section matching techniques;
+* ray-tracing interpretation of multiple reflected waves;
+* interactive visualizations of $|\Gamma(f)|$.
 
 ---
 
@@ -611,9 +616,9 @@ $$
 
 where:
 
-- $k$ is the wavenumber in the filling medium
-- $k_c$ is the cutoff wavenumber
-- $\beta$ is the longitudinal phase constant
+* $k$ is the wavenumber in the filling medium
+* $k_c$ is the cutoff wavenumber
+* $\beta$ is the longitudinal phase constant
 
 ---
 
@@ -679,15 +684,15 @@ flowchart LR
 
 It includes:
 
-- power transmission in rectangular waveguides;
-- conductor loss attenuation calculations;
-- cutoff frequency analysis;
-- computation of TE and TM propagation constants;
-- dielectric slab waveguide modal equations;
-- dispersion relation plots;
-- normalized frequency diagrams;
-- transverse electric field distributions;
-- validation against examples and problems from *Electromagnetic Waves and Antennas* by Sophocles J. Orfanidis.
+* power transmission in rectangular waveguides;
+* conductor loss attenuation calculations;
+* cutoff frequency analysis;
+* computation of TE and TM propagation constants;
+* dielectric slab waveguide modal equations;
+* dispersion relation plots;
+* normalized frequency diagrams;
+* transverse electric field distributions;
+* validation against examples and problems from *Electromagnetic Waves and Antennas* by Sophocles J. Orfanidis.
 
 ---
 
@@ -742,10 +747,10 @@ $$
 
 where:
 
-- $R$ is the resistance per unit length in $\Omega/m$
-- $L$ is the inductance per unit length in $H/m$
-- $G$ is the conductance per unit length in $S/m$
-- $C$ is the capacitance per unit length in $F/m$
+* $R$ is the resistance per unit length in $\Omega/m$
+* $L$ is the inductance per unit length in $H/m$
+* $G$ is the conductance per unit length in $S/m$
+* $C$ is the capacitance per unit length in $F/m$
 
 ---
 
@@ -765,8 +770,8 @@ $$
 
 where:
 
-- $\alpha$ is the attenuation constant in $Np/m$
-- $\beta$ is the phase constant in $rad/m$
+* $\alpha$ is the attenuation constant in $Np/m$
+* $\beta$ is the phase constant in $rad/m$
 
 ---
 
@@ -817,15 +822,15 @@ flowchart LR
 
 It includes:
 
-- frequency-domain analysis of lossless and lossy transmission lines;
-- computation of characteristic impedance;
-- computation of propagation constant;
-- input impedance transformation along a line;
-- reflection coefficient calculation;
-- SWR computation;
-- voltage and current distribution visualization;
-- Smith chart generation;
-- examples involving coaxial and microstrip lines.
+* frequency-domain analysis of lossless and lossy transmission lines;
+* computation of characteristic impedance;
+* computation of propagation constant;
+* input impedance transformation along a line;
+* reflection coefficient calculation;
+* SWR computation;
+* voltage and current distribution visualization;
+* Smith chart generation;
+* examples involving coaxial and microstrip lines.
 
 ---
 
@@ -843,15 +848,15 @@ F = number of frequency samples
 M = number of waveguide modes or modal roots tested
 ```
 
-| Task | Typical Time Complexity | Typical Space Complexity | Notes |
-|---|---:|---:|---|
-| Electrostatic potential grid evaluation | $O(N \cdot Nx \cdot Ny)$ | $O(Nx \cdot Ny)$ | Each Fourier term is evaluated over the grid. |
-| Electric field magnitude calculation | $O(Nx \cdot Ny)$ | $O(Nx \cdot Ny)$ | Uses numerical or analytical derivatives over the grid. |
-| Dielectric reflection frequency sweep | $O(F)$ | $O(F)$ | Reflection coefficient is evaluated for each frequency. |
-| Multilayer reflection sweep | $O(F \cdot L)$ | $O(F)$ | $L$ is the number of dielectric layers. |
-| Rectangular waveguide sweep | $O(F)$ | $O(F)$ | Computes cutoff, propagation, and attenuation quantities. |
-| Slab waveguide modal analysis | $O(F \cdot M)$ or higher | $O(F \cdot M)$ | Depends on root-finding strategy and number of modes. |
-| Transmission line frequency sweep | $O(F)$ | $O(F)$ | Computes $Z_0$, $\gamma$, $Z_{in}$, $\Gamma$, and SWR over frequency. |
+| Task                                    |  Typical Time Complexity | Typical Space Complexity | Notes                                                                 |
+| --------------------------------------- | -----------------------: | -----------------------: | --------------------------------------------------------------------- |
+| Electrostatic potential grid evaluation | $O(N \cdot Nx \cdot Ny)$ |         $O(Nx \cdot Ny)$ | Each Fourier term is evaluated over the grid.                         |
+| Electric field magnitude calculation    |         $O(Nx \cdot Ny)$ |         $O(Nx \cdot Ny)$ | Uses numerical or analytical derivatives over the grid.               |
+| Dielectric reflection frequency sweep   |                   $O(F)$ |                   $O(F)$ | Reflection coefficient is evaluated for each frequency.               |
+| Multilayer reflection sweep             |           $O(F \cdot L)$ |                   $O(F)$ | $L$ is the number of dielectric layers.                               |
+| Rectangular waveguide sweep             |                   $O(F)$ |                   $O(F)$ | Computes cutoff, propagation, and attenuation quantities.             |
+| Slab waveguide modal analysis           | $O(F \cdot M)$ or higher |           $O(F \cdot M)$ | Depends on root-finding strategy and number of modes.                 |
+| Transmission line frequency sweep       |                   $O(F)$ |                   $O(F)$ | Computes $Z_0$, $\gamma$, $Z_{in}$, $\Gamma$, and SWR over frequency. |
 
 ---
 
@@ -901,18 +906,18 @@ This order starts with field theory foundations and gradually moves toward guide
 
 # 🧰 Technologies and Tools
 
-| Tool / Library | Purpose |
-|---|---|
-| Python | Numerical computing and notebook implementation. |
-| Google Colab | Cloud-based notebook execution. |
-| Jupyter Notebook | Local interactive development environment. |
-| NumPy | Vectorized numerical calculations. |
-| SymPy | Symbolic mathematics and analytical derivations. |
-| Plotly | Interactive plots and 3D visualizations. |
-| Matplotlib | Static scientific plots. |
-| Markdown | Documentation and mathematical explanation. |
-| LaTeX math | Rendering electromagnetic equations in notebooks and README. |
-| Mermaid | Conceptual diagrams inside Markdown. |
+| Tool / Library   | Purpose                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Python           | Numerical computing and notebook implementation.             |
+| Google Colab     | Cloud-based notebook execution.                              |
+| Jupyter Notebook | Local interactive development environment.                   |
+| NumPy            | Vectorized numerical calculations.                           |
+| SymPy            | Symbolic mathematics and analytical derivations.             |
+| Plotly           | Interactive plots and 3D visualizations.                     |
+| Matplotlib       | Static scientific plots.                                     |
+| Markdown         | Documentation and mathematical explanation.                  |
+| LaTeX math       | Rendering electromagnetic equations in notebooks and README. |
+| Mermaid          | Conceptual diagrams inside Markdown.                         |
 
 ---
 
@@ -920,48 +925,48 @@ This order starts with field theory foundations and gradually moves toward guide
 
 Possible improvements include:
 
-- Add a `requirements.txt` file
-- Add a `notebooks/README.md` summary
-- Add deterministic examples for each notebook
-- Add validation tables comparing analytical and numerical values
-- Add unit tests for reusable functions
-- Convert repeated formulas into Python modules
-- Add finite-difference electrostatic solver
-- Add finite-difference time-domain examples
-- Add animations of wave propagation
-- Add Smith chart matching examples with stubs and quarter-wave transformers
-- Add support for lossy dielectric materials
-- Add oblique incidence for TE and TM polarization
-- Add multilayer transfer-matrix method implementation
-- Add more waveguide standards besides WR-159
-- Add coaxial and stripline examples
-- Add exportable figures for reports
-- Add interactive widgets for frequency and material parameters
-- Add a bibliography file such as `references.bib`
+* Add a `requirements.txt` file
+* Add a `notebooks/README.md` summary
+* Add deterministic examples for each notebook
+* Add validation tables comparing analytical and numerical values
+* Add unit tests for reusable functions
+* Convert repeated formulas into Python modules
+* Add finite-difference electrostatic solver
+* Add finite-difference time-domain examples
+* Add animations of wave propagation
+* Add Smith chart matching examples with stubs and quarter-wave transformers
+* Add support for lossy dielectric materials
+* Add oblique incidence for TE and TM polarization
+* Add multilayer transfer-matrix method implementation
+* Add more waveguide standards besides WR-159
+* Add coaxial and stripline examples
+* Add exportable figures for reports
+* Add interactive widgets for frequency and material parameters
+* Add a bibliography file such as `references.bib`
 
 ---
 
 # ⚠️ Notes
 
-- This repository is educational and experimental.
-- The notebooks prioritize clarity and physical interpretation over numerical optimization.
-- Some formulas assume lossless or nonmagnetic media unless otherwise stated.
-- Dijkstra-like graph algorithms are not used here; the focus is electromagnetic field and wave analysis.
-- Frequency sweeps should be interpreted according to the assumptions of each model.
-- For engineering design, numerical results should be validated with measurement, full-wave simulation, or specialized electromagnetic software.
-- Local images must remain inside the `images/` folder for the README figures to render correctly.
+* This repository is educational and experimental.
+* The notebooks prioritize clarity and physical interpretation over numerical optimization.
+* Some formulas assume lossless or nonmagnetic media unless otherwise stated.
+* Dijkstra-like graph algorithms are not used here; the focus is electromagnetic field and wave analysis.
+* Frequency sweeps should be interpreted according to the assumptions of each model.
+* For engineering design, numerical results should be validated with measurement, full-wave simulation, or specialized electromagnetic software.
+* Local images must remain inside the `images/` folder for the README figures to render correctly.
 
 ---
 
 # 🖼️ Image Credits and Sources
 
-| Image | Location | Description |
-|---|---|---|
-| Electrostatic boundary image | `images/potential_boundary.png` | Boundary geometry used for potential and field visualization. |
-| Single interface reflection image | `images/single_interface_reflection.PNG` | Incident, reflected, and transmitted waves at a dielectric interface. |
-| Three-layer reflection image | `images/three_layer_reflection.PNG` | Dielectric slab backed by a semi-infinite medium. |
-| Multilayer matching network image | `images/multilayer_matching_network.PNG` | Two-section dielectric matching network. |
-| Microstrip transmission line image | `images/microstrip_transmission_line.png` | Field distribution around a microstrip transmission line. |
+| Image                              | Location                                  | Description                                                           |
+| ---------------------------------- | ----------------------------------------- | --------------------------------------------------------------------- |
+| Electrostatic boundary image       | `images/potential_boundary.png`           | Boundary geometry used for potential and field visualization.         |
+| Single interface reflection image  | `images/single_interface_reflection.PNG`  | Incident, reflected, and transmitted waves at a dielectric interface. |
+| Three-layer reflection image       | `images/three_layer_reflection.PNG`       | Dielectric slab backed by a semi-infinite medium.                     |
+| Multilayer matching network image  | `images/multilayer_matching_network.PNG`  | Two-section dielectric matching network.                              |
+| Microstrip transmission line image | `images/microstrip_transmission_line.png` | Field distribution around a microstrip transmission line.             |
 
 If any image was adapted from a textbook, article, or external source, include the original citation and license information in this section.
 
@@ -973,28 +978,28 @@ The following references are useful for studying electromagnetic theory, microwa
 
 ## Books
 
-| Reference | Main Topic | Why it is useful |
-|---|---|---|
-| C. A. Balanis — *Advanced Engineering Electromagnetics*, 2nd Edition | Advanced electromagnetics | Strong reference for field theory, boundary value problems, waves, waveguides, and electromagnetic applications. |
-| Matthew N. O. Sadiku — *Computational Electromagnetics with MATLAB*, 4th Edition | Computational electromagnetics | Useful for numerical methods, simulation workflows, and computational field visualization. |
-| Sophocles J. Orfanidis — *Electromagnetic Waves and Antennas* | Waves, antennas, waveguides, and transmission lines | Main reference for wave propagation, reflection, transmission, waveguides, and microwave concepts. |
-| David M. Pozar — *Microwave Engineering* | Microwave circuits and transmission lines | Excellent reference for impedance matching, Smith charts, transmission lines, waveguides, and microwave networks. |
-| Ramo, Whinnery, and Van Duzer — *Fields and Waves in Communication Electronics* | Fields and guided waves | Classic reference connecting electromagnetic field theory to communication and microwave engineering. |
-| Hayt and Buck — *Engineering Electromagnetics* | Electromagnetic fundamentals | Good foundation for vector calculus, electrostatics, magnetostatics, waves, and boundary conditions. |
+| Reference                                                                        | Main Topic                                          | Why it is useful                                                                                                  |
+| -------------------------------------------------------------------------------- | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| C. A. Balanis — *Advanced Engineering Electromagnetics*, 2nd Edition             | Advanced electromagnetics                           | Strong reference for field theory, boundary value problems, waves, waveguides, and electromagnetic applications.  |
+| Matthew N. O. Sadiku — *Computational Electromagnetics with MATLAB*, 4th Edition | Computational electromagnetics                      | Useful for numerical methods, simulation workflows, and computational field visualization.                        |
+| Sophocles J. Orfanidis — *Electromagnetic Waves and Antennas*                    | Waves, antennas, waveguides, and transmission lines | Main reference for wave propagation, reflection, transmission, waveguides, and microwave concepts.                |
+| David M. Pozar — *Microwave Engineering*                                         | Microwave circuits and transmission lines           | Excellent reference for impedance matching, Smith charts, transmission lines, waveguides, and microwave networks. |
+| Ramo, Whinnery, and Van Duzer — *Fields and Waves in Communication Electronics*  | Fields and guided waves                             | Classic reference connecting electromagnetic field theory to communication and microwave engineering.             |
+| Hayt and Buck — *Engineering Electromagnetics*                                   | Electromagnetic fundamentals                        | Good foundation for vector calculus, electrostatics, magnetostatics, waves, and boundary conditions.              |
 
 ---
 
 ## Online Resources
 
-| Resource | Main Topic | Why it is useful | Link |
-|---|---|---|---|
-| Google Colab | Cloud notebooks | Allows running notebooks without local installation. | [colab.research.google.com](https://colab.research.google.com/) |
-| NumPy Documentation | Numerical computing | Official documentation for arrays, vectorization, and numerical operations. | [numpy.org](https://numpy.org/doc/) |
-| SymPy Documentation | Symbolic mathematics | Official documentation for symbolic derivations and equation manipulation. | [docs.sympy.org](https://docs.sympy.org/) |
-| Plotly Python Documentation | Interactive plotting | Useful for interactive field maps and frequency response plots. | [plotly.com/python](https://plotly.com/python/) |
-| Matplotlib Documentation | Scientific plotting | Useful for static plots and publication-style figures. | [matplotlib.org](https://matplotlib.org/stable/) |
-| Python Documentation | Python language | Official reference for Python syntax and standard library tools. | [docs.python.org](https://docs.python.org/3/) |
-| GitHub Docs — Mermaid diagrams | Markdown diagrams | Explains how to write Mermaid diagrams in GitHub Markdown. | [GitHub Docs](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) |
+| Resource                       | Main Topic           | Why it is useful                                                            | Link                                                                                                                       |
+| ------------------------------ | -------------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Google Colab                   | Cloud notebooks      | Allows running notebooks without local installation.                        | [colab.research.google.com](https://colab.research.google.com/)                                                            |
+| NumPy Documentation            | Numerical computing  | Official documentation for arrays, vectorization, and numerical operations. | [numpy.org](https://numpy.org/doc/)                                                                                        |
+| SymPy Documentation            | Symbolic mathematics | Official documentation for symbolic derivations and equation manipulation.  | [docs.sympy.org](https://docs.sympy.org/)                                                                                  |
+| Plotly Python Documentation    | Interactive plotting | Useful for interactive field maps and frequency response plots.             | [plotly.com/python](https://plotly.com/python/)                                                                            |
+| Matplotlib Documentation       | Scientific plotting  | Useful for static plots and publication-style figures.                      | [matplotlib.org](https://matplotlib.org/stable/)                                                                           |
+| Python Documentation           | Python language      | Official reference for Python syntax and standard library tools.            | [docs.python.org](https://docs.python.org/3/)                                                                              |
+| GitHub Docs — Mermaid diagrams | Markdown diagrams    | Explains how to write Mermaid diagrams in GitHub Markdown.                  | [GitHub Docs](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) |
 
 ---
 
@@ -1003,36 +1008,3 @@ The following references are useful for studying electromagnetic theory, microwa
 This project is available for educational and study purposes.
 
 If a license file is added to the repository, refer to `LICENSE` for usage terms.
-
----
-
-# ✅ Summary
-
-This repository is a computational study space for applied electromagnetics at the master's level.
-
-It connects:
-
-```text
-electrostatics
-Laplace equation
-separation of variables
-electric field visualization
-dielectric reflection
-quarter-wave matching
-binomial matching
-waveguide propagation
-slab waveguide modes
-transmission line theory
-impedance matching
-SWR and reflection coefficient
-```
-
-The main emphasis is:
-
-```text
-Start from electromagnetic theory.
-Derive the governing equations.
-Implement the model computationally.
-Visualize the physical behavior.
-Interpret the results as engineering quantities.
-```
